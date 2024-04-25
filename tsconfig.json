@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["ES6", "DOM"],
+    "allowJs": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "outDir": "qq_plus",
+    "skipLibCheck": true
+  },
+  "include": ["src", "src/*.json"],
+  "exclude": ["src/renderer/index.ts"]
+}

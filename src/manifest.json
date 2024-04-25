@@ -1,0 +1,20 @@
+{
+  "manifest_version": 4,
+  "type": "theme",
+  "name": "QQ Plus",
+  "slug": "QQPlus",
+  "description": "自用美化QQ",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "14K",
+      "link": "https://github.com/14Kay"
+    }
+  ],
+  "platform": ["win32", "linux", "darwin"],
+  "injects": {
+    "renderer": "./renderer/index.js",
+    "main": "./index.js",
+    "preload": "./preload/index.js"
+  }
+}

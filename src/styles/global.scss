@@ -1,0 +1,26 @@
+/* 禁用小红点 */
+.disabled-badge {
+    .q-badge {
+      .q-badge-num,
+      .q-badge-sub,
+      .q-badge__red {
+        display: none !important;
+      }
+    }
+  }
+  
+// 悬浮提示内容
+.lite-tools-toast {
+  .lite-tools-toast-item {
+    opacity: 0;
+    transform: translateY(-30px);
+    height: 0;
+    transition: 500ms;
+    position: relative;
+    &.lite-tools-toast-show {
+      opacity: 1;
+      height: 62px;
+      transform: translateY(0);
+    }
+  }
+}
