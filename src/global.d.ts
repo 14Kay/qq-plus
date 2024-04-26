@@ -66,3 +66,33 @@ declare namespace LiteLoader {
     get: (slug: string, default_config?: object) => object;
   }
 }
+interface Color {
+  title: string;
+  value: string;
+  description: string;
+  type: string;
+  default: string;
+}
+
+interface Config {
+  prefix: string;
+  config: {
+    title: string;
+    content: {
+      [key: string]: Color;
+    };
+  }[];
+}
+
+declare interface Window {
+  navigation: {
+    addEventListener: (event: string, callback: () => void, options: { once: boolean }) => void;
+  };
+  QQPlus: {
+    getConfig: () => Promise<Config>;
+    setConfig: (config: object) => unknown;
+  };
+  lite_tools:{
+    getOptions: () => unknown;
+  }
+}

@@ -1,26 +1,20 @@
-/* 禁用小红点 */
-.disabled-badge {
-    .q-badge {
-      .q-badge-num,
-      .q-badge-sub,
-      .q-badge__red {
-        display: none !important;
-      }
+.list-item{
+    background-color: var(--plus-list-item-bg);
+    border-radius: var(--plus-list-item-radius);
+    margin: var(--plus-list-item-margin) !important;
+    width: auto !important;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--plus-list-item-hover-bg) !important;
     }
-  }
-  
-// 悬浮提示内容
-.lite-tools-toast {
-  .lite-tools-toast-item {
-    opacity: 0;
-    transform: translateY(-30px);
-    height: 0;
-    transition: 500ms;
-    position: relative;
-    &.lite-tools-toast-show {
-      opacity: 1;
-      height: 62px;
-      transform: translateY(0);
+    &.list-item--selected{
+        background-color: var(--plus-list-item-selected-bg) !important;
     }
-  }
+}
+
+.msg-content-container{
+    border-radius: var(--plus-msg-content-radius);
+    padding: var(--plus-msg-content-padding);
+    background-color: var(--plus-msg-content-bg);
 }

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["ES6", "DOM"],
+    "lib": ["ESNext", "DOM"],
     "allowJs": true,
     "module": "CommonJS",
     "moduleResolution": "Node",
@@ -12,6 +12,6 @@
     "outDir": "qq_plus",
     "skipLibCheck": true
   },
-  "include": ["src", "src/*.json"],
-  "exclude": ["src/renderer/index.ts"]
+  "include": ["src", "src/**/*.json", "src/**/*.html"],
+  "exclude": ["src/renderer/*.ts"]
 }

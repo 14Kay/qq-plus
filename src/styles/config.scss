@@ -1,0 +1,28 @@
+.qq-plus {
+  .vertical-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+
+  .input {
+    padding: 0.5em;
+    border: 1px solid #eee;
+    border-radius: 0.25em;
+    font-size: 1em;
+  }
+
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg{
+      margin-left: 6px;
+      cursor: pointer;
+    }
+  }
+}

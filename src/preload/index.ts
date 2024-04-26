@@ -2,11 +2,15 @@
  * @Description:
  * @Author: 14K
  * @Date: 2024-04-25 00:16:28
- * @LastEditTime: 2024-04-25 18:58:47
+ * @LastEditTime: 2024-04-26 14:01:50
  * @LastEditors: 14K
  */
-import { contextBridge, ipcRenderer } from 'electron';
+import { contextBridge, ipcRenderer } from "electron";
+const pluginPath = LiteLoader.plugins["QQPlus"].path.plugin;
 
-contextBridge.exposeInMainWorld('qqPlus', {
-  getConfig: () => ipcRenderer.sendSync('getConfig'),
+contextBridge.exposeInMainWorld("QQPlus", {
+  getConfig: () =>
+    ipcRenderer.invoke("LiteLoader.QQPlus.getConfig", pluginPath),
+  setConfig: (config: object) =>
+    ipcRenderer.invoke("LiteLoader.QQPlus.setConfig", pluginPath, config),
 });

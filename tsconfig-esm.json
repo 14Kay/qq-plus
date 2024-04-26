@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
-    "lib": ["ES6", "DOM"],
+    "target": "ES2018",
+    "lib": ["ESNext", "DOM"],
     "allowJs": true,
     "module": "ES6",
     "moduleResolution": "Node",
-    "resolveJsonModule": true,
+    "resolveJsonModule": false,
     "strict": true,
     "strictNullChecks": true,
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
     "outDir": "qq_plus/renderer",
-    "skipLibCheck": true
+    "skipLibCheck": true,
   },
-  "include": ["src/renderer/index.ts"]
+  "include": ["src/renderer/*.ts"]
 }
