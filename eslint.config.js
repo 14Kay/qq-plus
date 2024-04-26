@@ -10,6 +10,7 @@ export default eslint(
       'src/global.d.ts',
       'README.md',
       'package.json',
+      'tsconfig-esm.json',
       'pnpm-workspace.yaml',
       'test/*'
     ],

@@ -5,12 +5,12 @@
  * @LastEditTime: 2024-04-26 14:01:50
  * @LastEditors: 14K
  */
-import { contextBridge, ipcRenderer } from "electron";
-const pluginPath = LiteLoader.plugins["QQPlus"].path.plugin;
+import { contextBridge, ipcRenderer } from 'electron';
+const pluginPath = LiteLoader.plugins['QQPlus'].path.plugin;
 
-contextBridge.exposeInMainWorld("QQPlus", {
+contextBridge.exposeInMainWorld('QQPlus', {
   getConfig: () =>
-    ipcRenderer.invoke("LiteLoader.QQPlus.getConfig", pluginPath),
+    ipcRenderer.invoke('LiteLoader.QQPlus.getConfig', pluginPath),
   setConfig: (config: object) =>
-    ipcRenderer.invoke("LiteLoader.QQPlus.setConfig", pluginPath, config),
+    ipcRenderer.invoke('LiteLoader.QQPlus.setConfig', pluginPath, config),
 });
