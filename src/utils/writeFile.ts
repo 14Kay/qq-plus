@@ -1,10 +1,3 @@
-/*
- * @Description:
- * @Author: 14K
- * @Date: 2024-04-25 10:17:44
- * @LastEditTime: 2024-04-26 20:39:28
- * @LastEditors: 14K
- */
 import * as fs from 'node:fs';
 
 export function writeFile(filePath: string, data: any): Promise<void> {

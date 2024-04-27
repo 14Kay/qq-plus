@@ -1,20 +1,34 @@
-.list-item{
-    background-color: var(--plus-list-item-bg);
-    border-radius: var(--plus-list-item-radius);
-    margin: var(--plus-list-item-margin) !important;
-    width: auto !important;
-    cursor: pointer;
-
-    &:hover{
-        background-color: var(--plus-list-item-hover-bg) !important;
+.q-theme-tokens-light{
+    .list-item{
+        background-color: var(--plus-list-item-bg);
+        border-radius: var(--plus-list-item-radius);
+        margin: var(--plus-list-item-margin) !important;
+        width: auto !important;
+        cursor: pointer;
+    
+        &:hover{
+            background-color: var(--plus-list-item-hover-bg) !important;
+        }
+        &.list-item--selected{
+            background-color: var(--plus-list-item-selected-bg) !important;
+        }
     }
-    &.list-item--selected{
-        background-color: var(--plus-list-item-selected-bg) !important;
+    
+    .msg-content-container:not(.container--self){
+        border-radius: var(--plus-msg-content-radius) !important;
+        background-color: var(--plus-msg-content-bg) !important;
     }
-}
+    .forward-msg{
+        border-radius: var(--plus-msg-content-radius) !important;
+    }
+    .msg-content-container.container--self{
+        background-color: var(--plus-msg-content-self-bg) !important;
+        border-radius: var(--plus-msg-content-self-radius) !important;
+    }
 
-.msg-content-container{
-    border-radius: var(--plus-msg-content-radius);
-    padding: var(--plus-msg-content-padding);
-    background-color: var(--plus-msg-content-bg);
+    .message-container--self{
+        .forward-msg{
+            border-radius: var(--plus-msg-content-self-radius) !important;
+        }
+    }
 }
